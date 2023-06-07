@@ -1,0 +1,69 @@
+//basic hello program 
+
+                  package main                       // package declaration
+                  import ("fmt")                    // import package
+
+                   func main(){                      //fuction
+                    fmt.Println("HELLO ENSURITY")
+                    }
+
+
+
+
+//Declaring of varibales
+                      >>Variables can be declared in two different modes 1.by var
+                                                                         2. and by using the sign ":="
+
+// PROG
+                      package main
+                      import ("fmt")
+    
+                      func main(){                                                              // WE CAN NOT WRITE THE BRACE IN SEPERATE LINE.
+                      var employe = "KRISHNA"
+                       employeID  := 241
+                       fmt.Println(employe)
+                       fmt.Println(employeID)
+                       }
+
+
+  // WITH MULTIPLE VARIABLES
+                    package main
+                    import ("fmt")
+                    
+                    func main(){
+                    var a,b,c  int = 1,2,3
+                    fmt.Println(a)
+                    fmt.Println(b)
+                    fmt.Println(c)
+                    }
+                    
+                    
+   //CONSTANTS.....These are used for the fixed values or variables iin the program.
+    //prog
+            package main
+            import("fmt")
+            func main(){
+              const PI = 3.14
+              fmt.Println(PI)
+              }
+    
+    //DATATYPES .......These are used to specify the size and type of the variable
+    //prog
+                package main
+                import ("fmt")
+                func main(){
+                var int a = 1
+                 bool b := true
+                 var float = 14.7
+                 var c string = "ensurity"
+               fmt.Println(a)
+               fmt.Println(b)
+               fmt.Println("float",c)
+               fmt.Println( "string:",c)
+               }
+                 
+            
+                 }
+    
+    
+    
