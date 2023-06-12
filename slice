@@ -1,0 +1,110 @@
+-------------------------------------------------------------------------------------
+//CREATING SLICE
+------------------------------------------------------------------------------------
+package main
+import ("fmt")
+
+func main() {
+	
+	numbers := []int{1, 2, 3, 4, 5}
+	
+	fmt.Println(numbers) 
+}
+
+----------------------------------------------------------------------------------------------------------
+//ACCESSING ELEMENTS OF SLICE
+---------------------------------------------------------------------------------------------------------
+package main
+
+import ("fmt")
+
+func main() {
+	
+	numbers := []int{1, 2, 3, 4, 5}
+	
+	// Accessing elements using indexing
+	fmt.Println(numbers[0]) // 1
+	fmt.Println(numbers[3]) // 4
+	
+	// Modifying an element
+	numbers[2] = 10
+	fmt.Println(numbers) 
+}
+
+---------------------------------------------------------------------------------------------------
+//Appending to a Slice
+-----------------------------------------------------------
+
+package main
+
+import ("fmt")
+
+func main() {
+	
+	numbers := []int{}
+	
+	// Appending elements to the slice
+	numbers = append(numbers, 1)
+	numbers = append(numbers, 2, 3, 4, 5)
+	
+	fmt.Println(numbers) 
+}
+
+------------------------------------------------------------------------------------
+Deleting from a Slice
+------------------------------------------------------------------------------------
+
+package main
+
+import ("fmt")
+
+func main() {
+	
+	numbers := []int{1, 2, 3, 4, 5}
+	
+	// Deleting an element from the slice
+	index := 2
+	numbers = append(numbers[:index], numbers[index+1:]...)
+	
+	fmt.Println(numbers) 
+}
+------------------------------------------------------------------------------------
+ slicing a string
+ -------------------------------------------------------------------------------------
+ package main
+
+import ("fmt")
+
+func main() {
+	
+	message := "Hello, World!"
+	
+	// Slicing the string
+	sliced := message[7:12]
+	
+	fmt.Println(sliced) 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
