@@ -1,0 +1,29 @@
+package main
+
+import ("fmt")
+
+func main() {
+	
+	persons := map[string]map[string]interface{}{
+		"Alice": {
+			"Age":  25,
+			"City": "New York",
+		},
+		"Bob": {
+			"Age":  30,
+			"City": "London",
+		},
+	}
+
+	// Access and print the data of specific persons
+	alice := persons["Alice"]
+	fmt.Println("Name:", "Alice")
+	fmt.Println("Age:", alice["Age"])
+	fmt.Println("City:", alice["City"])
+
+	bob := persons["Bob"]
+	fmt.Println("Name:", "Bob")
+	fmt.Println("Age:", bob["Age"])
+	fmt.Println("City:", bob["City"])
+}
+
