@@ -14,3 +14,83 @@ func main() {
 ------------------------------------------------------------------------------
 else  statement
 ------------------------------------------------------------------------------
+package main
+
+import ("fmt")
+
+func main() {
+    bankBalance := 3000
+        if  bankBalance >=3000{
+        fmt.Println("Minimum balance available")
+       } else{ 
+        fmt.Println(" NO Minimum balance ")
+        }
+	
+}
+
+
+------------------------------------------------------------------------------------
+else if statement
+-----------------------------------------------------------------------------------
+
+
+package main
+
+import ("fmt")
+
+func main() {
+    bankBalance := 0
+
+        if  bankBalance >=2500 {
+        fmt.Println("NO Minimum balance available")
+       } else if bankBalance==0 { 
+        fmt.Println(" there is no  balance")
+        }else{
+            fmt.Println("balance is sufficient")
+        }
+	
+}
+--------------------------------------------------------------------------------------
+nested if statement
+-------------------------------------------------------------------------------------
+
+
+package main
+
+import ("fmt")
+
+func main() {
+    grade := 94
+    if grade > 45{
+          fmt.Println("passing grade of:")
+        if grade >= 90{
+              fmt.Println("A")
+        } else if grade>=80{
+              fmt.Println("B")
+        } else if grade >=75{
+              fmt.Println("C")
+        }else if grade >= 65{
+              fmt.Println("D")
+    }else {
+                fmt.Println("F")
+           
+     }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
