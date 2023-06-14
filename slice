@@ -1,5 +1,7 @@
 /*slice is used same as an array but there is no fixed length for an slice . In array once we gave the size we can not add new elements.
  where as in slice we can increase or decrease th elements in the values. slice can change the values during runtime where that not possible for arrays.*/
+
+FOR ADDING OF THE ELEMENTS TO THE SLICE WE USE THE FUNCTION CALLED >>"append"<<......syntax-> sliceName= append("hehe","haha","hoho")
 -------------------------------------------------------------------------------------
 //CREATING SLICE
 ------------------------------------------------------------------------------------
