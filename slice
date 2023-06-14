@@ -1,3 +1,5 @@
+/*slice is used same as an array but there is no fixed length for an slice . In array once we gave the size we can not add new elements.
+ where as in slice we can increase or decrease th elements in the values. slice can change the values during runtime where that not possible for arrays.*/
 -------------------------------------------------------------------------------------
 //CREATING SLICE
 ------------------------------------------------------------------------------------
@@ -5,7 +7,7 @@ package main
 import ("fmt")
 
 func main() {
-	
+	                                                              // SYNTAX ------------------  sliceName:=[] type{}---------------
 	numbers := []int{1, 2, 3, 4, 5}
 	
 	fmt.Println(numbers) 
