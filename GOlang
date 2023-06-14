@@ -1,3 +1,73 @@
+package main//...here package is used declaration and the program starts excuting from the  main function it  serves is like entry of the program.
+import ("fmt")// fmt is the package imported from the mian function for the program.
+func main(){
+// here the body of the whole program must be inside of this.
+}
+
+
+BYTE RANGE IS 256 WHERE IT VARIES FROM 0 SO 0 TO 255.
+
+VARIABLES-> these are used to store and manipulate data.
+syntax-> var varibleName TYPE = value
+DATA TYPES-> used to specify the size and type of the variable values.
+mainly GO has four datatypes INT,STRING,BOOL,FLOAT.
+CONSTANTS-> these are used for the fixed values which can not be changed
+syntax->  const constantName TYPE = value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //basic hello program 
 
                   package main                       // package declaration
