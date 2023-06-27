@@ -44,4 +44,24 @@ func main() {
 	copy(g, h)
 	fmt.Println("G:", g)
 
+---------------------------------------------------------------------------
+PS D:\go\sample1> go run slice.go
+slice
+y       Len: 40         Cap: 50
+z       Len: 5  Cap: 5
+[10 20 30 40 50]
+a       Len: 5  Cap: 50
+[0 0 0 0 0]
+[0]
+[0 20]
+20
+[20 30]
+[10 20 30 40]
+[10 35 30 40]
+[krishna sai pavan]
+[krishna sai pavan vedantham]
+G: [22]
+
+	
+
 }
