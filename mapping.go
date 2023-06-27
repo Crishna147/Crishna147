@@ -27,3 +27,17 @@ func main() {
 		fmt.Println(key, value)
 	}
 }
+
+---------------------------------------------------------------------
+PS D:\go\sample1> go run mapping.go     
+Anime Name: Demon Slayer
+Seasons: 3
+Tanjiro THE DEMON SLAYER
+map[H:HASHIRA n:Nezuko t:Tanjiro z:Zenitzu]
+t Tanjiro
+n Nezuko
+z Zenitzu
+H HASHIRA
+
+
+
