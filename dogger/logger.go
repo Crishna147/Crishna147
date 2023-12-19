@@ -23,15 +23,6 @@ func CreateLogFileInDirectory(date string, directory string) (*os.File, error) {
 	logFiles[date] = file
 	return file, nil
 }
-// func CreateLogFile(date string) (*os.File, error) {
-// 	filename := "log_" + date + ".txt"
-// 	file, err := os.OpenFile(filename, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	logFiles[date] = file
-// 	return file, nil
-// }
 
 func WriteLogToFile(date string, message string,logDirectory string) {
 	file, exists := logFiles[date]
@@ -43,24 +34,7 @@ func WriteLogToFile(date string, message string,logDirectory string) {
 		}
 		file.WriteString("Log File Created: " + time.Now().Format("2006-01-02 15:04:05") + "\n")
 	}
-	file.WriteString(time.Now().Format("2001-01-02 15:04:05") + ": " + message + "\n")
-}
-
-func CloseLogFiles() {
-	for _, file := range logFiles {
-		file.Close()
-	}
-}
-
-func CheckFilesWithDate(date string) {
-	filename := "log_" + date + ".txt"
-	if _, err := os.Stat(filename); err == nil {
-		log.Println("File with date", date, "exists.")
-	} else if os.IsNotExist(err) {
-		log.Println("File with date", date, "does not exist.")
-	} else {
-		log.Println("Error checking file:", err)
-	}
+	file.WriteString(time.Now().Format("2006-01-02 15:04:05") + ": " + message + "\n")
 }
 
 func FindLogFiles(targetDate string, logDirectory string) ([]string, error) {
