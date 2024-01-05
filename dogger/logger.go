@@ -1,4 +1,4 @@
-package logger
+package dogger
 
 import (
 	"log"
@@ -24,10 +24,10 @@ func CreateLogFileInDirectory(date string, directory string) (*os.File, error) {
 	return file, nil
 }
 
-func WriteLogToFile(date string, message string,logDirectory string) {
+func WriteLogToFile(date string, message string, logDirectory string) {
 	file, exists := logFiles[date]
 	if !exists {
-		file, err := CreateLogFileInDirectory(date,logDirectory)
+		file, err := CreateLogFileInDirectory(date, logDirectory)
 		if err != nil {
 			log.Println("Error creating log file:", err)
 			return
