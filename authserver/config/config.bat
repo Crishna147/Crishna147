@@ -1,0 +1,1 @@
+CreateAPIConfig.exe "config.json" "../api_config.json" "TestKey@Prod#$erver^2021"
