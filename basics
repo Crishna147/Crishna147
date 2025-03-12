@@ -1,0 +1,112 @@
+## Variables and Data Types:##
+ ->variables store different types of data.
+package main 
+import "fmt"
+func main () {
+  var name string = "krishna"  //Explicit declaration
+  age := 23                    //  implicitdeclaratio
+  height := 5.7                 //flaot type
+  isAlive := true               //Boolean type
+  fmt.Println(name,age,height,isAlive)
+  }
+
+## functions ##
+->functions allow you to organize code and reuse logic.
+package main 
+import "fmt"
+func add(a,b int) int{
+  return a + b
+  }
+func main() {
+  sum := add(5,10)
+  fmt.Println("sum:", sum)
+  
+
+## Pointers ##
+->Pointers stores memory address and help with efficient memory management.
+  package main
+  import "fmt"
+  func main() {
+    x ;= 10
+    p = &x //pointer to x
+    fmt.Println("value of x:",x)
+    fmt.Println("memory address of x:",p)
+    fmt.Println("value at pointer p:", *p)
+    }
+  ## structs ##
+  structs allow you to create complex data types.(these are classes in oop)
+  package main
+  import "fmt"
+  type Person struct{
+    Name string
+    Age  int
+  }
+  func main () {
+     p := Person{Name: "krishna", Age:25}
+    fmt.Println(p.Name, "is",p.Age,"years old")
+    }
+  ## Interfaces ##
+  ->Interfaces allow you to define behaviors.
+  package main 
+  import "fmt"
+  type Animal interface{
+    Speak() string
+    }
+  type Dog struct{}
+  func (d Dog) Speak() string{
+    return "WOOF!"
+    }
+  func main() {
+    ver pet Animal = Dog{}
+    fmt.Println(pet.Speak())
+    }
+  
+### DATA STRUCTERS IN Golang ###
+## Arrays ##
+  ->these are fixed size
+  package main
+  import "fmt"
+  func main() {
+    arr := [5]int{1,2,3,4,5} //fixed size
+    fmt.Println(arr[2]) // accessing index 2 (output : 3)
+    }
+  ## slices ##
+  ->Dynamic arrays.i.e., no fixed length
+  package main
+  import "fmt"
+  func main() {
+    slice := []int{1,2,3} //dynamic size
+    slice := append(slice, 4) //append new element
+    fmt.Println(slice)  //output:[1 2 3 4]
+    }
+  ## Linked List ##
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
